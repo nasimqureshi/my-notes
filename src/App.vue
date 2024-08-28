@@ -9,6 +9,10 @@ function getRandomColor() {
   const color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
   return color;
 }
+const addNote = ()=>{
+  if(newNote.value.length < 10){
+    return errorMessage.value ="Not needs to be 10 characters or more"
+}
 
 const addNote = () => {
   notes.value.push({
